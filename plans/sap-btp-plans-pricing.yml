@@ -1,0 +1,55 @@
+name: SAP Business Technology Platform Plans and Pricing
+description: Pricing plans and account types for SAP Business Technology Platform (SAP BTP), covering trial, free tier, pay-as-you-go, and enterprise agreement models.
+url: https://www.sap.com/products/technology-platform/pricing.html
+plans:
+
+  - name: Trial Account
+    description: Time-limited trial account for evaluating SAP BTP services. Provides access to a curated set of services and tools for exploration and learning.
+    url: https://www.sap.com/products/technology-platform/trial.html
+    price: 0
+    unit: trial
+    free: true
+    trial: true
+    limitations:
+      - Time-limited access
+      - Restricted to trial-eligible services only
+      - Not for productive use
+
+  - name: Free Tier (PAYG / BTPEA)
+    description: No-time-limit free tier access within a Pay-As-You-Go or BTP Enterprise Agreement account. Provides always-free and free-tier plans for more than 90 services.
+    url: https://help.sap.com/docs/btp/sap-business-technology-platform/trial-accounts-and-free-tier
+    price: 0
+    unit: service-consumption
+    free: true
+    trial: false
+    limitations:
+      - Limited quotas per service
+      - Requires PAYG or BTPEA signup
+      - Upgrades to paid tiers when limits exceeded
+
+  - name: Pay-As-You-Go (PAYG)
+    description: Consumption-based model with no upfront investment or minimum commitment. Pay only for services consumed beyond free tier limits, billed monthly in arrears.
+    url: https://www.sap.com/products/technology-platform/pricing.html
+    price: 750
+    unit: month
+    free: false
+    trial: false
+    notes: Starting price approximately $750/month based on consumption. No annual commitment required.
+
+  - name: SAP BTP Enterprise Agreement (BTPEA)
+    description: Enterprise subscription agreement providing access to the full SAP BTP service catalog with consumption-based billing, monthly balance statements, and SLA guarantees.
+    url: https://developers.sap.com/tutorials/btp-ea-onboard-01-intro..html
+    price: 0
+    unit: custom
+    free: false
+    trial: false
+    notes: Custom pricing based on committed consumption. Minimum annual commitments typically start at $100,000+ for full enterprise packages. Replaces the older CPEA model.
+
+  - name: Cloud Platform Enterprise Agreement (CPEA) - Legacy
+    description: Older enterprise agreement model for SAP BTP. Customers are encouraged to migrate to BTPEA. Provides pre-paid credits consumed across SAP BTP services.
+    url: https://www.sap.com/products/technology-platform/pricing.html
+    price: 0
+    unit: custom
+    free: false
+    trial: false
+    notes: Legacy model, being superseded by SAP BTPEA.

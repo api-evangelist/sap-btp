@@ -1,0 +1,60 @@
+name: SAP Business Technology Platform Rate Limits
+description: Rate limiting and throttling policies for SAP BTP APIs and services. SAP BTP enforces traffic management policies at the API Management layer and individual service level to ensure platform stability and fair use.
+url: https://help.sap.com/docs/btp/sap-business-technology-platform/consuming-apis
+
+notes: >
+  SAP BTP does not publish a single unified rate limit table. Rate limits are enforced
+  per-service and configurable through SAP Integration Suite API Management. The values
+  below reflect documented defaults and community-reported limits as of 2026.
+
+policies:
+
+  - name: API Management Default Throttle
+    description: Default rate limit applied to APIs managed through SAP Integration Suite API Management. Can be customized per API policy.
+    url: https://blogs.sap.com/2017/08/10/sap-cloud-platform-api-management-rate-limiting-api-calls/
+    limit: varies
+    unit: requests-per-minute
+    scope: per-api
+    configurable: true
+    notes: Configured via Traffic Management policies in SAP API Management; spike arrest and quota policies available.
+
+  - name: Core Services APIs (Accounts, Entitlements, Directories)
+    description: Rate limits for SAP BTP Core Services REST APIs (Cloud Management Service). These APIs manage global accounts, subaccounts, entitlements, and directories.
+    url: https://api.sap.com/package/SAPCloudPlatformCoreServices/rest
+    limit: varies
+    unit: requests-per-minute
+    scope: per-tenant
+    configurable: false
+    notes: Protected via OAuth 2.0. Excessive calls may result in HTTP 429 Too Many Requests responses.
+
+  - name: Authorization and Trust Management (XSUAA)
+    description: Rate limits for XSUAA token endpoint calls. Token caching is strongly recommended to avoid hitting rate limits.
+    url: https://help.sap.com/docs/btp/sap-business-technology-platform/managing-api-credentials-for-calling-rest-apis-of-sap-authorization-and-trust-management-service
+    limit: varies
+    unit: requests-per-minute
+    scope: per-subaccount
+    configurable: false
+    notes: OAuth 2.0 client credentials tokens should be cached and reused until expiry (typically 12 hours) to minimize token requests.
+
+  - name: Destination Service
+    description: Rate limits for SAP BTP Destination Service REST API calls used to retrieve connectivity configuration.
+    url: https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/destinations-destination-service-rest-api
+    limit: varies
+    unit: requests-per-second
+    scope: per-subaccount
+    configurable: false
+    notes: Destination lookups should be cached client-side. Repeated uncached calls may be throttled.
+
+  - name: SAP AI Core
+    description: Rate limits for SAP AI Core inference and deployment APIs, dependent on service plan and model being invoked.
+    url: https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core
+    limit: varies
+    unit: requests-per-minute
+    scope: per-deployment
+    configurable: false
+    notes: Limits vary by AI model and service plan. Contact SAP for specific throughput quotas.
+
+enforcement:
+  http_status_code: 429
+  retry_after_header: true
+  documentation_url: https://help.sap.com/docs/btp/sap-business-technology-platform/consuming-apis

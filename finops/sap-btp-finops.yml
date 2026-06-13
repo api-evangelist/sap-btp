@@ -1,0 +1,66 @@
+name: SAP Business Technology Platform FinOps
+description: Financial operations guidance for managing SAP BTP costs, monitoring consumption, optimizing spend, and governing service usage across global accounts and subaccounts.
+url: https://www.sap.com/products/technology-platform/pricing.html
+
+cost_model:
+  type: consumption-based
+  billing_cycle: monthly
+  currency: USD
+  notes: >
+    SAP BTP uses a consumption-based credit model. Under PAYG and BTPEA, customers are
+    charged based on actual usage of platform services. Credits are debited per service
+    metric (e.g., API calls, compute time, data volume, messages processed). Monthly
+    balance statements provide transparency on charges incurred.
+
+visibility:
+  - name: SAP BTP Cockpit
+    description: Primary administrative console for viewing service consumption, managing global accounts, subaccounts, and monitoring entitlement usage in real time.
+    url: https://cockpit.btp.cloud.sap/
+  - name: SAP for Me
+    description: Customer self-service portal providing access to cloud availability, system status, and consumption reporting across SAP products including BTP.
+    url: https://me.sap.com/
+  - name: Monthly Balance Statements
+    description: SAP sends monthly balance statements summarizing consumption charges across all services in the BTP account, providing a financial overview for FinOps reviews.
+
+cost_drivers:
+  - name: API Calls / Messages
+    description: SAP Integration Suite and API Management services are metered on message count or API call volume.
+  - name: Compute Resources
+    description: Kyma (Kubernetes), Cloud Foundry, and ABAP environment services are metered on memory, CPU, and instance hours.
+  - name: Data Storage
+    description: SAP HANA Cloud, Datasphere, and other data services charge based on storage capacity consumed.
+  - name: AI Inference
+    description: SAP AI Core charges are based on inference calls, model hosting, and GPU compute time.
+  - name: User Licensing
+    description: Some services (e.g., SAP Analytics Cloud) include named-user or concurrent-user licensing components in addition to consumption metrics.
+
+optimization_strategies:
+  - name: Free Tier Services
+    description: Leverage more than 90 services with free tier or always-free plans under PAYG/BTPEA accounts before committing to paid consumption.
+    url: https://help.sap.com/docs/btp/sap-business-technology-platform/trial-accounts-and-free-tier
+  - name: Entitlement Governance
+    description: Use the BTP Cockpit to set service plan quotas and entitlement limits per subaccount, preventing runaway consumption.
+  - name: Token Caching
+    description: Cache OAuth 2.0 tokens from XSUAA (valid up to 12 hours) to reduce authentication API call costs.
+  - name: Destination Caching
+    description: Cache Destination Service lookups in application memory to reduce repeated API calls and associated throttling risks.
+  - name: SAP Discovery Center
+    description: Use the SAP Discovery Center cost estimator to model expected consumption before deploying new services.
+    url: https://discovery-center.cloud.sap/
+
+governance:
+  - name: Subaccount Segmentation
+    description: Organize workloads by environment (dev, test, prod) and business unit across subaccounts to isolate and attribute costs clearly.
+  - name: Alert Notification Service
+    description: Configure SAP Alert Notification service for SAP BTP to trigger budget and consumption threshold alerts.
+    url: https://help.sap.com/docs/alert-notification
+  - name: Resource Tagging
+    description: Tag subaccounts and service instances with cost center labels to enable chargeback and showback reporting.
+
+references:
+  - url: https://www.sap.com/products/technology-platform/pricing.html
+    title: SAP BTP Pricing Page
+  - url: https://learning.sap.com/courses/becoming-an-sap-btp-solution-architect/exploring-sap-btp-commercial-models
+    title: Exploring SAP BTP Commercial Models (SAP Learning)
+  - url: https://saplicensingexperts.com/blog/sap-btp-licensing-models-free-tier-vs-enterprise.html
+    title: SAP BTP Licensing Models - Free Tier vs Enterprise
