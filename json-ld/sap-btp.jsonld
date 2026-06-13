@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "schema": "https://schema.org/",
+    "api": "https://pending.schema.org/WebAPI"
+  },
+  "@type": "Organization",
+  "@id": "https://www.sap.com/products/technology-platform.html",
+  "name": "SAP Business Technology Platform",
+  "alternateName": "SAP BTP",
+  "description": "Cloud platform with REST APIs for application development, integration, data management, AI services, and analytics across the SAP ecosystem. SAP BTP unifies AI agents, applications, and data across SAP and third-party landscapes with secure, API-ready integrations.",
+  "url": "https://www.sap.com/products/technology-platform.html",
+  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "sameAs": [
+    "https://github.com/SAP",
+    "https://www.linkedin.com/showcase/sap-developers",
+    "https://twitter.com/sapCommBlogs"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SAP BTP API Services",
+    "itemListElement": [
+      {
+        "@type": "WebAPI",
+        "name": "SAP BTP Core Services API",
+        "description": "REST APIs for managing SAP BTP global accounts, subaccounts, directories, and entitlements. Provides programmatic control over the platform hierarchy and service provisioning.",
+        "url": "https://api.sap.com/package/SAPCloudPlatformCoreServices/rest",
+        "documentation": "https://api.sap.com/package/SAPCloudPlatformCoreServices/rest",
+        "keywords": ["Accounts", "Entitlements", "Directories", "Core Services"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      },
+      {
+        "@type": "WebAPI",
+        "name": "SAP Authorization and Trust Management Service API (XSUAA)",
+        "description": "OAuth 2.0-based authorization and trust management service for SAP BTP. Handles user authentication, client credentials grants, and JWT token issuance for service-to-service communication.",
+        "url": "https://help.sap.com/docs/btp/sap-business-technology-platform/managing-api-credentials-for-calling-rest-apis-of-sap-authorization-and-trust-management-service",
+        "documentation": "https://help.sap.com/docs/btp/sap-business-technology-platform/managing-api-credentials-for-calling-rest-apis-of-sap-authorization-and-trust-management-service",
+        "keywords": ["Authentication", "OAuth2", "XSUAA", "Security"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      },
+      {
+        "@type": "WebAPI",
+        "name": "SAP Destination Service API",
+        "description": "REST API for retrieving and managing connectivity destinations in SAP BTP. Used by applications to look up connection parameters for remote services and on-premise systems.",
+        "url": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/destinations-destination-service-rest-api",
+        "documentation": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/destinations-destination-service-rest-api",
+        "endpointUrl": "https://destination-configuration.cfapps.eu10.hana.ondemand.com",
+        "keywords": ["Connectivity", "Destinations", "Integration"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      },
+      {
+        "@type": "WebAPI",
+        "name": "SAP Integration Suite API",
+        "description": "APIs for SAP Integration Suite, providing cloud integration, API management, event mesh, and integration advisor capabilities for connecting SAP and third-party systems.",
+        "url": "https://help.sap.com/docs/integration-suite/sap-integration-suite/api-documentation",
+        "documentation": "https://help.sap.com/docs/integration-suite/sap-integration-suite/api-documentation",
+        "keywords": ["Integration", "API Management", "Cloud Integration", "Event Mesh"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      },
+      {
+        "@type": "WebAPI",
+        "name": "SAP AI Core API",
+        "description": "REST API for SAP AI Core, enabling training, deployment, and inference of AI and machine learning models within the SAP BTP ecosystem.",
+        "url": "https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core",
+        "documentation": "https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core",
+        "keywords": ["AI", "Machine Learning", "Inference", "Generative AI"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      },
+      {
+        "@type": "WebAPI",
+        "name": "SAP Service Manager API",
+        "description": "REST API for managing service instances and service bindings across SAP BTP environments, enabling multi-environment service lifecycle management.",
+        "url": "https://service-manager.cfapps.eu10.hana.ondemand.com/api/",
+        "documentation": "https://service-manager.cfapps.eu10.hana.ondemand.com/api/",
+        "endpointUrl": "https://service-manager.cfapps.eu10.hana.ondemand.com",
+        "keywords": ["Service Management", "Lifecycle", "Instances", "Bindings"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      },
+      {
+        "@type": "WebAPI",
+        "name": "SAP Alert Notification Service API",
+        "description": "REST API for configuring and receiving alerts about events in SAP BTP services. Enables proactive monitoring, incident response, and budget threshold notifications.",
+        "url": "https://help.sap.com/docs/alert-notification",
+        "documentation": "https://help.sap.com/docs/alert-notification",
+        "keywords": ["Monitoring", "Alerts", "Notifications", "Observability"],
+        "provider": {
+          "@type": "Organization",
+          "name": "SAP"
+        }
+      }
+    ]
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "url": "https://help.sap.com/docs/btp/sap-business-technology-platform/sap-business-technology-platform"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.sap.com/products/technology-platform/pricing.html",
+    "priceCurrency": "USD",
+    "description": "SAP BTP pricing plans including free tier, pay-as-you-go, and enterprise subscription options."
+  },
+  "knowsAbout": [
+    "Cloud Platform",
+    "Integration",
+    "Artificial Intelligence",
+    "Data Management",
+    "Analytics",
+    "Application Development",
+    "Enterprise Software"
+  ]
+}

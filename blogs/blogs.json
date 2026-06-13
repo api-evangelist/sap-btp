@@ -1,0 +1,50 @@
+{
+  "aid": "sap-btp",
+  "name": "SAP Business Technology Platform",
+  "blogUrl": "https://community.sap.com/t5/technology-blog-posts-by-sap/bg-p/technology-blog-sap",
+  "lastFetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Getting Started with SAP BTP Core Services API",
+      "url": "https://api.sap.com/package/SAPCloudPlatformCoreServices/rest",
+      "description": "Overview of the REST APIs for managing SAP BTP global accounts, subaccounts, directories, and entitlements programmatically.",
+      "tags": ["BTP", "Core Services", "Accounts", "Entitlements"]
+    },
+    {
+      "title": "SAP Authorization and Trust Management Service (XSUAA) API Guide",
+      "url": "https://help.sap.com/docs/btp/sap-business-technology-platform/managing-api-credentials-for-calling-rest-apis-of-sap-authorization-and-trust-management-service",
+      "description": "How to use OAuth 2.0-based authorization and trust management for SAP BTP, including client credentials and JWT token issuance.",
+      "tags": ["XSUAA", "OAuth2", "Authentication", "Security"]
+    },
+    {
+      "title": "Connectivity and Destinations on SAP BTP",
+      "url": "https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/destinations-destination-service-rest-api",
+      "description": "Guide to using the SAP Destination Service REST API for managing connectivity to remote services and on-premise systems.",
+      "tags": ["Connectivity", "Destinations", "Integration", "Cloud Foundry"]
+    },
+    {
+      "title": "SAP Integration Suite API Documentation",
+      "url": "https://help.sap.com/docs/integration-suite/sap-integration-suite/api-documentation",
+      "description": "Comprehensive API documentation for SAP Integration Suite covering cloud integration, API management, event mesh, and integration advisor.",
+      "tags": ["Integration Suite", "API Management", "Cloud Integration", "Event Mesh"]
+    },
+    {
+      "title": "SAP AI Core: Training and Deployment REST API",
+      "url": "https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core",
+      "description": "REST API reference for SAP AI Core enabling AI/ML model training, deployment, and inference within the SAP BTP ecosystem.",
+      "tags": ["AI Core", "Machine Learning", "Generative AI", "Inference"]
+    },
+    {
+      "title": "SAP Service Manager API: Multi-Environment Service Lifecycle",
+      "url": "https://service-manager.cfapps.eu10.hana.ondemand.com/api/",
+      "description": "How to use the SAP Service Manager REST API to manage service instances and bindings across SAP BTP Cloud Foundry and Kubernetes environments.",
+      "tags": ["Service Manager", "Lifecycle", "Instances", "Bindings"]
+    },
+    {
+      "title": "Proactive Monitoring with SAP Alert Notification Service API",
+      "url": "https://help.sap.com/docs/alert-notification",
+      "description": "Configuring and receiving alerts about SAP BTP service events using the Alert Notification Service REST API for incident response and budget monitoring.",
+      "tags": ["Alert Notification", "Monitoring", "Observability", "Notifications"]
+    }
+  ]
+}
