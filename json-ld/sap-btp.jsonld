@@ -10,7 +10,7 @@
   "alternateName": "SAP BTP",
   "description": "Cloud platform with REST APIs for application development, integration, data management, AI services, and analytics across the SAP ecosystem. SAP BTP unifies AI agents, applications, and data across SAP and third-party landscapes with secure, API-ready integrations.",
   "url": "https://www.sap.com/products/technology-platform.html",
-  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "logo": "https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg",
   "sameAs": [
     "https://github.com/SAP",
     "https://www.linkedin.com/showcase/sap-developers",

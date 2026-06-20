@@ -1,7 +1,7 @@
 aid: sap-btp
 name: SAP Business Technology Platform
 description: Cloud platform with REST APIs for application development, integration, data management, AI services, and analytics across the SAP ecosystem. SAP BTP unifies AI agents, applications, and data across SAP and third-party landscapes with secure, API-ready integrations.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/sap-btp/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -19,7 +19,7 @@ apis:
 
   - name: SAP BTP Core Services API
     description: REST APIs for managing SAP BTP global accounts, subaccounts, directories, and entitlements. Provides programmatic control over the platform hierarchy and service provisioning.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://api.sap.com/package/SAPCloudPlatformCoreServices/rest
     baseURL: https://api.sap.com
     tags:
@@ -35,7 +35,7 @@ apis:
 
   - name: SAP Authorization and Trust Management Service API (XSUAA)
     description: OAuth 2.0-based authorization and trust management service for SAP BTP. Handles user authentication, client credentials grants, and JWT token issuance for service-to-service communication.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.sap.com/docs/btp/sap-business-technology-platform/managing-api-credentials-for-calling-rest-apis-of-sap-authorization-and-trust-management-service
     baseURL: https://api.sap.com
     tags:
@@ -49,7 +49,7 @@ apis:
 
   - name: SAP Destination Service API
     description: REST API for retrieving and managing connectivity destinations in SAP BTP. Used by applications to look up connection parameters for remote services and on-premise systems.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/destinations-destination-service-rest-api
     baseURL: https://destination-configuration.cfapps.eu10.hana.ondemand.com
     tags:
@@ -62,7 +62,7 @@ apis:
 
   - name: SAP Integration Suite API
     description: APIs for SAP Integration Suite, providing cloud integration, API management, event mesh, and integration advisor capabilities for connecting SAP and third-party systems.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.sap.com/docs/integration-suite/sap-integration-suite/api-documentation
     baseURL: https://api.sap.com
     tags:
@@ -76,7 +76,7 @@ apis:
 
   - name: SAP AI Core API
     description: REST API for SAP AI Core, enabling training, deployment, and inference of AI and machine learning models within the SAP BTP ecosystem.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core
     baseURL: https://api.sap.com
     tags:
@@ -90,7 +90,7 @@ apis:
 
   - name: SAP Service Manager API
     description: REST API for managing service instances and service bindings across SAP BTP environments, enabling multi-environment service lifecycle management.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://service-manager.cfapps.eu10.hana.ondemand.com/api/
     baseURL: https://service-manager.cfapps.eu10.hana.ondemand.com
     tags:
@@ -104,7 +104,7 @@ apis:
 
   - name: SAP Alert Notification Service API
     description: REST API for configuring and receiving alerts about events in SAP BTP services. Enables proactive monitoring, incident response, and budget threshold notifications.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.sap.com/docs/alert-notification
     baseURL: https://api.sap.com
     tags:
