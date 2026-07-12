@@ -118,6 +118,10 @@ apis:
 
 common:
 
+  - type: VulnerabilityDisclosure
+    url: security/sap-btp-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/sap-btp-domain-security.yml
   - type: Website
     url: https://www.sap.com/products/technology-platform.html
 
