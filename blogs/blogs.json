@@ -3,16 +3,13 @@
   "feeds": [
     {
       "source": "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap",
-      "feed_url": "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap",
-      "title": "",
-      "saved": 20,
-      "method": "feed"
+      "error": "HTTPError"
     },
     {
       "source": "https://www.linkedin.com/showcase/sap-developers",
       "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:03:07Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 28
 }
