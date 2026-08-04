@@ -2,14 +2,13 @@
   "repo": "sap-btp",
   "feeds": [
     {
-      "source": "https://community.sap.com/khhcw49343/rss/board?board.id=technology-blog-sap",
-      "error": "HTTPError"
-    },
-    {
       "source": "https://www.linkedin.com/showcase/sap-developers",
-      "error": "HTTPError"
+      "feed_url": "https://www.linkedin.com/showcase/sap-developers",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-07-11T11:50:51Z",
+  "fetched": "2026-08-01T15:49:00Z",
   "post_count": 28
 }
