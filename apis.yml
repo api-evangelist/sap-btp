@@ -22,6 +22,15 @@ tags:
   - SAP
   - Cloud Platform
   - Integration
+  - Artificial Intelligence
+  - Data Management
+  - Analytics
+  - Application Development
+  - Enterprise
+tags_raw:
+  - SAP
+  - Cloud Platform
+  - Integration
   - AI
   - Data Management
   - Analytics
@@ -35,6 +44,11 @@ apis:
     humanURL: https://api.sap.com/package/SAPCloudPlatformCoreServices/rest
     baseURL: https://api.sap.com
     tags:
+      - Account
+      - Entitlements
+      - Directories
+      - Core Services
+    tags_raw:
       - Accounts
       - Entitlements
       - Directories
@@ -51,6 +65,10 @@ apis:
     humanURL: https://help.sap.com/docs/btp/sap-business-technology-platform/managing-api-credentials-for-calling-rest-apis-of-sap-authorization-and-trust-management-service
     baseURL: https://api.sap.com
     tags:
+      - Authentication
+      - XSUAA
+      - Security
+    tags_raw:
       - Authentication
       - OAuth2
       - XSUAA
@@ -92,6 +110,11 @@ apis:
     humanURL: https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/what-is-sap-ai-core
     baseURL: https://api.sap.com
     tags:
+      - Artificial Intelligence
+      - Machine-Learning
+      - Inference
+      - Generative AI
+    tags_raw:
       - AI
       - Machine Learning
       - Inference
@@ -120,6 +143,11 @@ apis:
     humanURL: https://help.sap.com/docs/alert-notification
     baseURL: https://api.sap.com
     tags:
+      - Monitoring
+      - Alerts
+      - Notification
+      - Observability
+    tags_raw:
       - Monitoring
       - Alerts
       - Notifications
