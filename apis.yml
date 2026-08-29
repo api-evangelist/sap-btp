@@ -3,6 +3,17 @@ name: SAP Business Technology Platform
 description: Cloud platform with REST APIs for application development, integration, data management, AI services,
   and analytics across the SAP ecosystem. SAP BTP unifies AI agents, applications, and data across SAP and third-party
   landscapes with secure, API-ready integrations.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
