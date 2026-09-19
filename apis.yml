@@ -97,6 +97,10 @@ apis:
   baseURL: https://destination-configuration.cfapps.eu10.hana.ondemand.com
   tags:
   - Connectivity
+  - Destination
+  - Integration
+  tags_raw:
+  - Connectivity
   - Destinations
   - Integration
   properties:
