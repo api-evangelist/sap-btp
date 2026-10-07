@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: SAP Business Technology Platform Rate Limits
 description: Rate limiting and throttling policies for SAP BTP APIs and services. SAP BTP enforces traffic management policies at the API Management layer and individual service level to ensure platform stability and fair use.
 url: https://help.sap.com/docs/btp/sap-business-technology-platform/consuming-apis
