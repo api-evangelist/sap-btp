@@ -66,47 +66,116 @@
 
 Cloud platform with REST APIs for application development, integration, data management, AI services, and analytics across the SAP ecosystem. SAP BTP unifies AI agents, applications, and data across SAP and third-party landscapes with secure, API-ready integrations.
 
-- **Website:** https://www.sap.com/products/technology-platform.html
-- **Documentation:** https://help.sap.com/docs/btp/sap-business-technology-platform/sap-business-technology-platform
-- **API Hub:** https://api.sap.com/products/SAPCloudPlatform/apis/REST
-- **GitHub:** https://github.com/SAP
-- **Pricing:** https://www.sap.com/products/technology-platform/pricing.html
-- **Status:** https://www.sap.com/about/trust-center/cloud-service-status.html
-- **Blog:** https://community.sap.com/t5/technology-blog-posts-by-sap/bg-p/technology-blog-sap
+**Areas:** SAP · Cloud Platform · Integration · Artificial Intelligence · Data Management · Analytics · Application Development · Enterprise
 
-## APIs
+## SAP Business Technology Platform on APIs.io
 
-- **Core Services API** — Manage global accounts, subaccounts, directories, and entitlements
-- **Authorization and Trust Management (XSUAA)** — OAuth 2.0 authentication and JWT token management
-- **Destination Service API** — Connectivity destination configuration for SAP and third-party systems
-- **Integration Suite API** — Cloud integration, API management, and event mesh capabilities
-- **AI Core API** — AI/ML model training, deployment, and inference
-- **Service Manager API** — Service instance and binding lifecycle management
-- **Alert Notification Service API** — Event-driven alerts and monitoring notifications
+Everything profiled for SAP Business Technology Platform is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sap-btp/](https://apis.io/providers/sap-btp/)** — or go straight to one of the APIs or properties below.
 
-## Authentication
+### APIs (7)
 
-SAP BTP APIs use OAuth 2.0 with the XSUAA (Extended Services for UAA) service as the authorization server. The client credentials grant type is used for service-to-service communication. Tokens are typically valid for 12 hours and should be cached to minimize token requests.
+- [SAP BTP Core Services API](https://apis.io/apis/sap-btp/sap-btp-core-services-api/) — REST APIs for managing SAP BTP global accounts, subaccounts, directories, and entitlements. Provides programmatic control over the platform hierarchy and…
+- [SAP Authorization and Trust Management Service API (XSUAA)](https://apis.io/apis/sap-btp/sap-authorization-and-trust-management-service-api-xsuaa/) — OAuth 2.0-based authorization and trust management service for SAP BTP. Handles user authentication, client credentials grants, and JWT token issuance for…
+- [SAP Destination Service API](https://apis.io/apis/sap-btp/sap-destination-service-api/) — REST API for retrieving and managing connectivity destinations in SAP BTP. Used by applications to look up connection parameters for remote services and…
+- [SAP Integration Suite API](https://apis.io/apis/sap-btp/sap-integration-suite-api/) — APIs for SAP Integration Suite, providing cloud integration, API management, event mesh, and integration advisor capabilities for connecting SAP and…
+- [SAP AI Core API](https://apis.io/apis/sap-btp/sap-ai-core-api/) — REST API for SAP AI Core, enabling training, deployment, and inference of AI and machine learning models within the SAP BTP ecosystem.
+- [SAP Service Manager API](https://apis.io/apis/sap-btp/sap-service-manager-api/) — REST API for managing service instances and service bindings across SAP BTP environments, enabling multi-environment service lifecycle management.
+- [SAP Alert Notification Service API](https://apis.io/apis/sap-btp/sap-alert-notification-service-api/) — REST API for configuring and receiving alerts about events in SAP BTP services. Enables proactive monitoring, incident response, and budget threshold…
 
-## Pricing
+### Published properties
 
-SAP BTP offers consumption-based pricing with the following account types:
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Trial** — Time-limited free access for evaluation
-- **Free Tier (PAYG/BTPEA)** — No-expiry free access to 90+ services within paid account types
-- **Pay-As-You-Go** — No minimum commitment, billed monthly based on usage
-- **SAP BTP Enterprise Agreement (BTPEA)** — Enterprise subscription with annual commitment and full service catalog access
+#### JSON-LD (1)
 
-See [plans/sap-btp-plans-pricing.yml](plans/sap-btp-plans-pricing.yml) for full pricing details.
+Linked-data contexts for the provider's vocabulary.
 
-## Rate Limits
+- [Sap Btp Context](https://apis.io/jsonld/sap-btp/sap-btp/)
 
-Rate limits are enforced per-service and configurable through SAP Integration Suite API Management. HTTP 429 responses indicate rate limit exceeded. Token caching and destination caching are recommended best practices to reduce API call volume.
+#### Security (2)
 
-See [rate-limits/sap-btp-rate-limits.yml](rate-limits/sap-btp-rate-limits.yml) for service-level details.
+Authentication, trust centre, and vulnerability disclosure.
 
-## FinOps
+- [Sap Btp Domain Security](https://apis.io/security/sap-btp/sap-btp-domain-security/)
+- [Sap Btp Vulnerability Disclosure](https://apis.io/security/sap-btp/sap-btp-vulnerability-disclosure/)
 
-Cost management is performed through the SAP BTP Cockpit and SAP for Me portal. Monthly balance statements provide consumption transparency. Key cost drivers include API call volume, compute hours, data storage, AI inference, and user licensing for applicable services.
+#### Plans and pricing (1)
 
-See [finops/sap-btp-finops.yml](finops/sap-btp-finops.yml) for FinOps guidance.
+Published plans, tiers and prices.
+
+- [Sap Btp Plans Pricing](https://apis.io/plans/sap-btp/sap-btp-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Sap Btp Rate Limits](https://apis.io/rate-limits/sap-btp/sap-btp-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Sap Btp Finops](https://apis.io/finops/sap-btp/sap-btp-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.sap.com/products/technology-platform.html)
+- [Documentation](https://help.sap.com/docs/btp/sap-business-technology-platform/sap-business-technology-platform)
+- [Pricing](https://www.sap.com/products/technology-platform/pricing.html)
+- [Blog](https://community.sap.com/t5/technology-blog-posts-by-sap/bg-p/technology-blog-sap)
+- [Status](https://www.sap.com/about/trust-center/cloud-service-status.html)
+
+## API Evangelist rating
+
+**Kin Score 22.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 30.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 10.5 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sap-btp/](https://apis.io/providers/sap-btp/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SAP Business Technology Platform: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sap-btp/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
